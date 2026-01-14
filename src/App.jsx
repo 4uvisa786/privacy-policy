@@ -9,7 +9,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/privacy policy" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<TermsAndConditions />} />
         <Route path="/delete-account" element={<DeleteAccountForm />} />
       </Routes>
     </BrowserRouter>
