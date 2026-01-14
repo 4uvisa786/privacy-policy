@@ -136,17 +136,16 @@ const TermsAndConditions = () => {
             <section id="thirdparty">
               <h2>5. Third-Party Services & SDKs</h2>
               <ul>
-                <li>Google Firebase</li>
-                <li>SMS / OTP providers</li>
-                <li>Payment gateways (if applicable)</li>
+                <li>Currently we are not using but in future if we use then we will inform to user and update privicy policy</li>
+
               </ul>
             </section>
 
             <section id="payments">
               <h2>6. Payments</h2>
               <p>
-                Payments are processed through secure third-party gateways.
-                4U Visas does not store card or UPI details.
+              We do not currently process payments through the app,If payment features are introduced in the future, users will be informed and 
+                4U Visas will not store card or UPI details.
               </p>
             </section>
 
@@ -172,7 +171,6 @@ const TermsAndConditions = () => {
                 <li>Access personal data</li>
                 <li>Correct inaccurate data</li>
                 <li>Request deletion</li>
-                <li>Withdraw consent</li>
               </ul>
             </section>
 
