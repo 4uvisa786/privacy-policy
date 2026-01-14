@@ -4,14 +4,22 @@ const TermsAndConditions = () => {
   const [activeSection, setActiveSection] = useState("introduction");
 
   const sections = [
-    { id: "introduction", title: "1. Privacy Overview" },
-    { id: "usage", title: "2. Information We Collect" },
-    { id: "accounts", title: "3. How We Use Information" },
-    { id: "ip", title: "4. Data Sharing & Third Parties" },
-    { id: "liability", title: "5. Data Security" },
-    { id: "termination", title: "6. Data Retention & Deletion" },
-    { id: "changes", title: "7. Policy Updates" },
-    { id: "contact", title: "8. Contact Details" },
+    { id: "introduction", title: "Privacy Policy Overview" },
+    { id: "scope", title: "1. Scope of This Policy" },
+    { id: "collection", title: "2. Information We Collect" },
+    { id: "usage", title: "3. Use of Information" },
+    { id: "sharing", title: "4. Sharing of Information" },
+    { id: "thirdparty", title: "5. Third-Party Services & SDKs" },
+    { id: "payments", title: "6. Payments" },
+    { id: "security", title: "7. Data Security" },
+    { id: "deletion", title: "8. Data Retention & Deletion" },
+    { id: "rights", title: "9. Your Rights" },
+    { id: "cookies", title: "10. Cookies & Analytics" },
+    { id: "children", title: "11. Children’s Privacy" },
+    { id: "disclaimer", title: "12. No Government Affiliation" },
+    { id: "links", title: "13. Third-Party Links" },
+    { id: "changes", title: "14. Policy Changes" },
+    { id: "contact", title: "15. Contact Us" },
   ];
 
   const scrollToSection = (id) => {
@@ -60,101 +68,160 @@ const TermsAndConditions = () => {
 
           <div className="prose prose-blue max-w-none text-gray-600 leading-relaxed">
 
-            <section id="introduction" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">
-                1. Privacy Overview
-              </h2>
+            <section id="introduction">
               <p>
-                4U Visas values your privacy and handles personal information responsibly.
-                This Privacy Policy explains how data is collected, processed, and protected
-                when you use our mobile application, website, or related services.
+                At 4U Visas, we respect your privacy and are committed to protecting
+                the personal information of our users. This Privacy Policy explains
+                how we collect, use, store, share, and protect your information when
+                you use our mobile application, website, or related services.
+              </p>
+              <p>
+                By using our app or services, you agree to the collection and use of
+                information in accordance with this Privacy Policy.
               </p>
             </section>
 
-            <section id="usage" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">
-                2. Information We Collect
-              </h2>
+            <section id="scope">
+              <h2>1. Scope of This Privacy Policy</h2>
+              <ul>
+                <li>The 4U Visas mobile application</li>
+                <li>Our official website</li>
+                <li>All visa, attestation, documentation, and travel-related services offered by 4U Visas</li>
+              </ul>
+            </section>
+
+            <section id="collection">
+              <h2>2. Information We Collect</h2>
+              <p><strong>Personal Information:</strong> Full name, email address, phone number.</p>
+              <p><strong>Sensitive Personal Information (when required):</strong></p>
+              <ul>
+                <li>CNIC or passport details</li>
+                <li>Visa-related documents</li>
+                <li>Educational and professional certificates</li>
+                <li>CVs and supporting documents</li>
+              </ul>
               <p>
-                We may collect personal details such as name, phone number, and email address.
-                For visa-related services, sensitive information like passport or identification
-                documents may be required strictly for verification and legal processing.
+                Sensitive data is collected strictly for verification, visa processing,
+                and legal compliance purposes.
+              </p>
+              
+            </section>
+
+            <section id="usage">
+              <h2>3. How We Use Your Information</h2>
+              <ul>
+                <li>Visa and attestation processing</li>
+                <li>Embassy appointment coordination</li>
+                <li>Document verification and legalization</li>
+                <li>Communication regarding applications or requests</li>
+                <li>Customer support and service updates</li>
+                <li>App performance monitoring and improvement</li>
+                <li>Legal and regulatory compliance</li>
+              </ul>
+              <p>
+                We do not use your data for unauthorized marketing or profiling.
               </p>
             </section>
 
-            <section id="accounts" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">
-                3. How We Use Information
-              </h2>
+            <section id="sharing">
+              <h2>4. Sharing of Information</h2>
+              <ul>
+                <li>Embassies, consulates, or authorized agents</li>
+                <li>Government authorities where legally required</li>
+                <li>Trusted third-party service providers</li>
+              </ul>
+              <p><strong>We do NOT sell, rent, or trade personal data.</strong></p>
+            </section>
+
+            <section id="thirdparty">
+              <h2>5. Third-Party Services & SDKs</h2>
+              <ul>
+                <li>Google Firebase</li>
+                <li>SMS / OTP providers</li>
+                <li>Payment gateways (if applicable)</li>
+              </ul>
+            </section>
+
+            <section id="payments">
+              <h2>6. Payments</h2>
               <p>
-                Collected data is used solely for providing visa assistance, document verification,
-                appointment coordination, customer support, and compliance with applicable laws.
-                User data is never used for unauthorized marketing activities.
+                Payments are processed through secure third-party gateways.
+                4U Visas does not store card or UPI details.
               </p>
             </section>
 
-            <section id="ip" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">
-                4. Data Sharing & Third Parties
-              </h2>
+            <section id="security">
+              <h2>7. Data Security</h2>
               <p>
-                Information may be shared with embassies, government authorities, or trusted
-                service partners only when required to deliver services. We do not sell or trade
-                personal data under any circumstances.
+                Industry-standard safeguards are implemented, but no system
+                can guarantee absolute security.
               </p>
             </section>
 
-            <section id="liability" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">
-                5. Data Security
-              </h2>
-              <p className="bg-amber-50 border-l-4 border-amber-400 p-4 italic">
-                Appropriate technical and organizational safeguards are implemented to protect
-                data. While we take strong precautions, absolute security cannot be guaranteed.
+            <section id="deletion">
+              <h2>8. Data Retention & Deletion</h2>
+              <p>
+                Data is retained only as required. Users may request deletion
+                via Support@4uvisas.com or in-app options.
               </p>
             </section>
 
-            <section id="termination" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">
-                6. Data Retention & Deletion
-              </h2>
+            <section id="rights">
+              <h2>9. Your Rights</h2>
+              <ul>
+                <li>Access personal data</li>
+                <li>Correct inaccurate data</li>
+                <li>Request deletion</li>
+                <li>Withdraw consent</li>
+              </ul>
+            </section>
+
+            <section id="cookies">
+              <h2>10. Cookies & Analytics</h2>
               <p>
-                Personal data is retained only for the duration necessary to fulfill services
-                and legal obligations. Users may request account and data deletion by contacting
-                Support@4uvisas.com. Requests are processed within a reasonable timeframe.
+                Cookies and analytics tools help improve performance and
+                user experience.
               </p>
             </section>
 
-            <section id="changes" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">
-                7. Policy Updates
-              </h2>
+            <section id="children">
+              <h2>11. Children’s Privacy</h2>
               <p>
-                This Privacy Policy may be updated periodically. Any revisions will be reflected
-                with a new effective date. Continued use of the app implies acceptance of changes.
+                Services are not intended for individuals under 18.
               </p>
             </section>
 
-            <section id="contact" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">
-                8. Contact Details
-              </h2>
+            <section id="disclaimer">
+              <h2>12. No Government Affiliation Disclaimer</h2>
               <p>
-                For privacy-related questions or data requests, please contact:
-                <br />
-                Email: Support@4uvisas.com
-                <br />
+                4U Visas is a private consultancy and not affiliated with any
+                government or embassy.
+              </p>
+            </section>
+
+            <section id="links">
+              <h2>13. Third-Party Links</h2>
+              <p>
+                We are not responsible for external websites or their policies.
+              </p>
+            </section>
+
+            <section id="changes">
+              <h2>14. Changes to This Privacy Policy</h2>
+              <p>
+                Updates may occur and will reflect a revised effective date.
+              </p>
+            </section>
+
+            <section id="contact">
+              <h2>15. Contact Us</h2>
+              <p>
+                Email: Support@4uvisas.com<br />
                 Phone / WhatsApp: +92 339 5555 804
               </p>
             </section>
 
           </div>
-
-          <footer className="mt-12 pt-8 border-t border-gray-100">
-            <p className="text-xs text-gray-400 text-center uppercase tracking-widest">
-              This Privacy Policy is designed to comply with Google Play data safety requirements.
-            </p>
-          </footer>
         </main>
       </div>
     </div>
