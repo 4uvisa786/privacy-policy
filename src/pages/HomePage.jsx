@@ -10,7 +10,7 @@ const HomePage = () => {
       title: "privacy policy",
       description: "Read our usage policy and legal agreements.",
       icon: <ShieldCheck className="w-5 h-5 text-blue-600" />,
-      path: "/terms-and-conditions",
+      path: "/privacy-policy",
       color: "hover:bg-blue-50",
     },
     {
