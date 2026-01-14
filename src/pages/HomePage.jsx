@@ -7,7 +7,7 @@ const HomePage = () => {
 
   const menuItems = [
     {
-      title: "Terms and Conditions",
+      title: "privacy policy",
       description: "Read our usage policy and legal agreements.",
       icon: <ShieldCheck className="w-5 h-5 text-blue-600" />,
       path: "/terms-and-conditions",
