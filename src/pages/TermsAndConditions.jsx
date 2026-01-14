@@ -4,14 +4,14 @@ const TermsAndConditions = () => {
   const [activeSection, setActiveSection] = useState("introduction");
 
   const sections = [
-    { id: "introduction", title: "1. Introduction" },
-    { id: "usage", title: "2. Use of Our Services" },
-    { id: "accounts", title: "3. User Accounts" },
-    { id: "ip", title: "4. Intellectual Property" },
-    { id: "liability", title: "5. Limitation of Liability" },
-    { id: "termination", title: "6. Termination" },
-    { id: "changes", title: "7. Changes to Terms" },
-    { id: "contact", title: "8. Contact Information" },
+    { id: "introduction", title: "1. Privacy Overview" },
+    { id: "usage", title: "2. Information We Collect" },
+    { id: "accounts", title: "3. How We Use Information" },
+    { id: "ip", title: "4. Data Sharing & Third Parties" },
+    { id: "liability", title: "5. Data Security" },
+    { id: "termination", title: "6. Data Retention & Deletion" },
+    { id: "changes", title: "7. Policy Updates" },
+    { id: "contact", title: "8. Contact Details" },
   ];
 
   const scrollToSection = (id) => {
@@ -22,8 +22,8 @@ const TermsAndConditions = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
-        
-        {/* Sidebar Navigation - Sticky for easy access */}
+
+        {/* Sidebar */}
         <aside className="md:w-1/4">
           <div className="sticky top-8">
             <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
@@ -47,93 +47,112 @@ const TermsAndConditions = () => {
           </div>
         </aside>
 
-        {/* Main Content Card */}
+        {/* Main Content */}
         <main className="md:w-3/4 bg-white shadow-sm border border-gray-200 rounded-xl p-8 md:p-12">
           <header className="border-b border-gray-100 pb-8 mb-8">
             <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">
-              Terms & Conditions
+              Privacy Policy
             </h1>
             <p className="mt-4 text-sm text-gray-500">
-              Last updated: <span className="font-medium text-gray-700">January 12, 2026</span>
+              Effective Date: <span className="font-medium text-gray-700">January 8, 2026</span>
             </p>
           </header>
 
           <div className="prose prose-blue max-w-none text-gray-600 leading-relaxed">
+
             <section id="introduction" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">1. Introduction</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
+                1. Privacy Overview
+              </h2>
               <p>
-                Welcome to our website. By accessing or using our services, you agree
-                to be bound by these Terms and Conditions. If you do not agree with any
-                part of these terms, please do not use our website.
+                4U Visas values your privacy and handles personal information responsibly.
+                This Privacy Policy explains how data is collected, processed, and protected
+                when you use our mobile application, website, or related services.
               </p>
             </section>
 
             <section id="usage" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">2. Use of Our Services</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
+                2. Information We Collect
+              </h2>
               <p>
-                You agree to use this website only for lawful purposes and in a way
-                that does not infringe the rights of others or restrict their use of
-                the website. Any misuse may result in termination of access.
+                We may collect personal details such as name, phone number, and email address.
+                For visa-related services, sensitive information like passport or identification
+                documents may be required strictly for verification and legal processing.
               </p>
             </section>
 
             <section id="accounts" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">3. User Accounts</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
+                3. How We Use Information
+              </h2>
               <p>
-                If you create an account on our website, you are responsible for
-                maintaining the confidentiality of your account credentials and all
-                activities that occur under your account.
+                Collected data is used solely for providing visa assistance, document verification,
+                appointment coordination, customer support, and compliance with applicable laws.
+                User data is never used for unauthorized marketing activities.
               </p>
             </section>
 
             <section id="ip" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">4. Intellectual Property</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
+                4. Data Sharing & Third Parties
+              </h2>
               <p>
-                All content, logos, designs, and materials on this website are the
-                intellectual property of the company and may not be copied,
-                reproduced, or distributed without prior written permission.
+                Information may be shared with embassies, government authorities, or trusted
+                service partners only when required to deliver services. We do not sell or trade
+                personal data under any circumstances.
               </p>
             </section>
 
             <section id="liability" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">5. Limitation of Liability</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
+                5. Data Security
+              </h2>
               <p className="bg-amber-50 border-l-4 border-amber-400 p-4 italic">
-                We are not responsible for any direct, indirect, or incidental damages
-                resulting from the use or inability to use our services, including
-                loss of data or profits.
+                Appropriate technical and organizational safeguards are implemented to protect
+                data. While we take strong precautions, absolute security cannot be guaranteed.
               </p>
             </section>
 
             <section id="termination" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">6. Termination</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
+                6. Data Retention & Deletion
+              </h2>
               <p>
-                We reserve the right to suspend or terminate your access to the
-                website at any time without prior notice if you violate these Terms
-                and Conditions.
+                Personal data is retained only for the duration necessary to fulfill services
+                and legal obligations. Users may request account and data deletion by contacting
+                Support@4uvisas.com. Requests are processed within a reasonable timeframe.
               </p>
             </section>
 
             <section id="changes" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">7. Changes to Terms</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
+                7. Policy Updates
+              </h2>
               <p>
-                We may update these Terms and Conditions from time to time. Continued
-                use of the website after changes are posted constitutes acceptance of
-                the updated terms.
+                This Privacy Policy may be updated periodically. Any revisions will be reflected
+                with a new effective date. Continued use of the app implies acceptance of changes.
               </p>
             </section>
 
             <section id="contact" className="mb-10">
-              <h2 className="text-xl font-bold text-gray-800 mb-3">8. Contact Information</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
+                8. Contact Details
+              </h2>
               <p>
-                If you have any questions about these Terms and Conditions, please
-                contact us through the information provided on our website.
+                For privacy-related questions or data requests, please contact:
+                <br />
+                Email: Support@4uvisas.com
+                <br />
+                Phone / WhatsApp: +92 339 5555 804
               </p>
             </section>
+
           </div>
 
           <footer className="mt-12 pt-8 border-t border-gray-100">
             <p className="text-xs text-gray-400 text-center uppercase tracking-widest">
-              Legal Disclaimer: These terms do not constitute legal advice.
+              This Privacy Policy is designed to comply with Google Play data safety requirements.
             </p>
           </footer>
         </main>
